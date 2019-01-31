@@ -1,0 +1,63 @@
+\begin{thebibliography}{10}
+
+\bibitem{amlPaper2}
+P.~Danny, P.~Ferreira, M.~Guedes, and N.~Lohse, ``{An AutomationML model for
+  plug-and-produce assembly systems},'' in {\em IEEE 15th International
+  Conference of Industrial Informatics (INDIN)}, 2017.
+
+\bibitem{aml_paper}
+P.~Danny, P.~Ferreira, K.~Dorofeev, and N.~Lohse, ``{An Event-Based
+  AutomationML Model for the Process Execution of ‘Plug-and-Produce’
+  Assembly Systems},'' in {\em IEEE 16th International Conference of Industrial
+  Informatics (INDIN)}, July 2018.
+
+\bibitem{d_wp3_semantic_model}
+``{openMOS Deliverable 3.7: Common Semantic Model},'' tech. rep., 2017.
+
+\bibitem{discovery}
+S.~Profanter, K.~Dorofeev, A.~Zoitl, and A.~Knoll, ``{OPC UA for Plug\&Produce:
+  Automatic Device Discovery using LDS-ME},'' in {\em Proceedings of the {IEEE}
+  International Conference on Emerging Technologies And Factory Automation
+  ({ETFA})}, (Limassol, Cyprus), Sept. 2017.
+
+\bibitem{daPaper}
+K.~Dorofeev, C.-H. Cheng, M.~Guedes, P.~Ferreira, S.~Profanter, and A.~Zoitl,
+  ``{Device Adapter Concept towards Enabling Plug\&Produce Production
+  Environments},'' in {\em Proceedings of the {IEEE} International Conference
+  on Emerging Technologies And Factory Automation ({ETFA})}, Sept. 2017.
+
+\bibitem{msbPaper}
+F.~Miranda, R.~Martins, K.~Dorofeev, V.~Gentile, P.~Ferreira, and M.~Guedes,
+  ``{Towards a Common Manufacturing Service Bus to Enable Flexible
+  Plug-and-Produce Automation},'' in {\em ISR 2018; 50th International
+  Symposium on Robotics}, June 2018.
+
+\bibitem{d_wp2_arch_spec}
+``{openMOS Deliverable 2.1: Plug\&produce automation device specification},''
+  tech. rep., 2016.
+
+\bibitem{d_wp2_da}
+``{openMOS Deliverable 2.3: Open Plug\&produce device adaptor prototype},''
+  tech. rep., 2017.
+
+\bibitem{d_wp3_msb}
+``{openMOS Deliverable 3.6: Open Plug\&Produce Manufacturing Service Bus},''
+  tech. rep., 2017.
+
+\bibitem{youtube_introsys}
+``{Introsys Demonstrator}.'' \url{https://www.youtube.com/watch?v=fCKewJr2dkQ}.
+\newblock Accessed: 2019-01-21.
+
+\bibitem{youtube_masmec}
+``{Masmec Demonstrator}.'' \url{https://www.youtube.com/watch?v=IG_vdXarrIQ}.
+\newblock Accessed: 2019-01-21.
+
+\bibitem{d_wp6_lboro_demo}
+``{openMOS Deliverable 6.3: Specification of large simulation demonstrator},''
+  tech. rep., 2017.
+
+\bibitem{d_wp7_ford}
+``{openMOS Deliverable 7.8: RTV/Anaerobic Dispensing Cell Demonstrator},''
+  tech. rep., 2019.
+
+\end{thebibliography}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libraryElement:AutomationSystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:libraryElement="org.fordiac.ide.model.libraryElement" name="masmecTestRaspi" id="_8PJr4HHoEeen16UuZnYJKA">
+  <versionInfo author="Author" organization="4DIAC-Consortium" version="1.0"/>
+  <application comment="" name="masmec">
+    <fBNetwork href="masmec.xml#//@fbNetwork"/>
+  </application>
+  <systemConfiguration>
+    <systemConfigurationNetwork href="SysConf.xml#//@systemConfigNetwork"/>
+  </systemConfiguration>
+</libraryElement:AutomationSystem>

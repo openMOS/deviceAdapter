@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<virtualDNS:VirtualDNSManagement xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:virtualDNS="org.fordiac.ide.virtualDNS" activeVirtualDNS="//@availableDNSCollections.0">
+  <availableDNSCollections name="Configuration">
+    <virtualDNSEntries name="raspi" value="192.1.0.50"/>
+  </availableDNSCollections>
+</virtualDNS:VirtualDNSManagement>

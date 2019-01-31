@@ -1,0 +1,24 @@
+[
+  {
+	"machineUrl": "opc.tcp://192.168.17.194:12686/test-machine-server",
+	"name": "Example machine",
+	"deviceUrls": [
+	  "opc.tcp://192.168.17.194:12687/test-device-server"
+	]
+  },
+  {
+	"machineUrl": "opc.tcp://fortiss-n-094:12696",
+	"name": "Example machine",
+	"deviceUrls": [
+	  "opc.tcp://fortiss-n-094:12687"
+	]
+  },
+  {
+	"machineUrl": "opc.tcp://0.0.0.0:12686/test-machine-server",
+	"name": "Example machine with RasPI",
+	"deviceUrls": [
+	  "opc.tcp://192.1.0.50:4840"
+	]
+  }
+
+]

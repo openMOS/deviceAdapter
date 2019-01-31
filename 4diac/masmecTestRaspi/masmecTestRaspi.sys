@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE System SYSTEM "http://www.holobloc.com/xml/LibraryElement.dtd">
+<System Name="masmecTestRaspi">
+  <VersionInfo Author="Author" Organization="4DIAC-Consortium" Version="1.0"/>
+  <Application Name="masmec">
+    <SubAppNetwork>
+      <FB Name="INT2INT" Type="INT2INT" x="3515.0" y="950.0"/>
+      <FB Name="F_MUL" Type="F_MUL" x="4420.0" y="945.0">
+        <Parameter Name="IN2" Value="INT#3"/>
+      </FB>
+      <FB Name="INT2INT_0" Type="INT2INT" x="5320.0" y="950.0"/>
+      <FB Name="SUBSCRIBE_1" Type="SUBSCRIBE_1" x="2490.0" y="1145.0">
+        <Parameter Name="QI" Value="1"/>
+        <Parameter Name="ID" Value="opc_ua[/Objects/2:in]"/>
+      </FB>
+      <FB Name="PUBLISH_1" Type="PUBLISH_1" x="6260.0" y="1285.0">
+        <Parameter Name="QI" Value="1"/>
+        <Parameter Name="ID" Value="opc_ua[/Objects/2:out]"/>
+      </FB>
+      <DataConnections>
+        <Connection Destination="F_MUL.IN1" Source="INT2INT.OUT" dx1="0.0" dx2="0.0" dy="0.0"/>
+        <Connection Destination="INT2INT_0.IN" Source="F_MUL.OUT" dx1="0.0" dx2="0.0" dy="0.0"/>
+        <Connection Destination="INT2INT.IN" Source="SUBSCRIBE_1.RD_1" dx1="0.0" dx2="0.0" dy="0.0"/>
+        <Connection Destination="PUBLISH_1.SD_1" Source="INT2INT_0.OUT" dx1="0.0" dx2="0.0" dy="0.0"/>
+      </DataConnections>
+      <EventConnections>
+        <Connection Destination="F_MUL.REQ" Source="INT2INT.CNF" dx1="0.0" dx2="0.0" dy="0.0"/>
+        <Connection Destination="INT2INT_0.REQ" Source="F_MUL.CNF" dx1="0.0" dx2="0.0" dy="0.0"/>
+        <Connection Destination="INT2INT.REQ" Source="SUBSCRIBE_1.IND" dx1="0.0" dx2="0.0" dy="0.0"/>
+        <Connection Destination="PUBLISH_1.REQ" Source="INT2INT_0.CNF" dx1="0.0" dx2="0.0" dy="0.0"/>
+        <Connection Destination="PUBLISH_1.INIT" Source="SUBSCRIBE_1.INITO" dx1="0.0" dx2="0.0" dy="0.0"/>
+      </EventConnections>
+    </SubAppNetwork>
+  </Application>
+  <Device Name="FORTE_PC" Type="FORTE_PC" x="3695.0" y="1185.0">
+    <Attribute Name="Color" Value="125,164,238"/>
+    <Attribute Name="Profile" Value="HOLOBLOC"/>
+    <Parameter Name="MGR_ID" Value="&quot;192.1.0.50:61499&quot;"/>
+    <Resource Name="EMB_RES" Type="EMB_RES" x="0.0" y="0.0">
+      <FBNetwork>
+        <FB Name="INT2INT_0" Type="INT2INT" x="5320.0" y="950.0"/>
+        <FB Name="F_MUL" Type="F_MUL" x="4420.0" y="945.0">
+          <Parameter Name="IN2" Value="INT#3"/>
+        </FB>
+        <FB Name="PUBLISH_1" Type="PUBLISH_1" x="6260.0" y="1285.0">
+          <Parameter Name="QI" Value="1"/>
+          <Parameter Name="ID" Value="opc_ua[/Objects/2:out]"/>
+        </FB>
+        <FB Name="SUBSCRIBE_1" Type="SUBSCRIBE_1" x="2490.0" y="1145.0">
+          <Parameter Name="QI" Value="1"/>
+          <Parameter Name="ID" Value="opc_ua[/Objects/2:in]"/>
+        </FB>
+        <FB Name="INT2INT" Type="INT2INT" x="3515.0" y="950.0"/>
+        <DataConnections>
+          <Connection Destination="INT2INT_0.IN" Source="F_MUL.OUT" dx1="0.0" dx2="0.0" dy="0.0"/>
+          <Connection Destination="PUBLISH_1.SD_1" Source="INT2INT_0.OUT" dx1="0.0" dx2="0.0" dy="0.0"/>
+          <Connection Destination="INT2INT.IN" Source="SUBSCRIBE_1.RD_1" dx1="0.0" dx2="0.0" dy="0.0"/>
+          <Connection Destination="F_MUL.IN1" Source="INT2INT.OUT" dx1="0.0" dx2="0.0" dy="0.0"/>
+        </DataConnections>
+        <EventConnections>
+          <Connection Destination="INT2INT_0.REQ" Source="F_MUL.CNF" dx1="0.0" dx2="0.0" dy="0.0"/>
+          <Connection Destination="PUBLISH_1.REQ" Source="INT2INT_0.CNF" dx1="0.0" dx2="0.0" dy="0.0"/>
+          <Connection Destination="PUBLISH_1.INIT" Source="SUBSCRIBE_1.INITO" dx1="0.0" dx2="0.0" dy="0.0"/>
+          <Connection Destination="INT2INT.REQ" Source="SUBSCRIBE_1.IND" dx1="0.0" dx2="0.0" dy="0.0"/>
+          <Connection Destination="F_MUL.REQ" Source="INT2INT.CNF" dx1="0.0" dx2="0.0" dy="0.0"/>
+          <Connection Destination="SUBSCRIBE_1.INIT" Source="START.COLD" dx1="0.0" dx2="0.0" dy="0.0"/>
+          <Connection Destination="SUBSCRIBE_1.INIT" Source="START.WARM" dx1="0.0" dx2="0.0" dy="0.0"/>
+        </EventConnections>
+      </FBNetwork>
+    </Resource>
+  </Device>
+  <Mapping From="masmec.INT2INT_0" To="FORTE_PC.EMB_RES.INT2INT_0"/>
+  <Mapping From="masmec.F_MUL" To="FORTE_PC.EMB_RES.F_MUL"/>
+  <Mapping From="masmec.PUBLISH_1" To="FORTE_PC.EMB_RES.PUBLISH_1"/>
+  <Mapping From="masmec.SUBSCRIBE_1" To="FORTE_PC.EMB_RES.SUBSCRIBE_1"/>
+  <Mapping From="masmec.INT2INT" To="FORTE_PC.EMB_RES.INT2INT"/>
+  <Segment Name="Ethernet" Type="Ethernet" dx1="1500.0" x="4235.0" y="450.0">
+    <Attribute Name="Color" Value="224,80,87"/>
+  </Segment>
+  <Link CommResource="FORTE_PC" Comment="" SegmentName="Ethernet"/>
+</System>

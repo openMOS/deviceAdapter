@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Class-Path: netty-transport-4.0.36.Final.jar metrics-core-3.1.2.jar ne
+ tty-codec-4.0.36.Final.jar guava-19.0.jar stack-core-0.1.1.jar stack-
+ client-0.1.1.jar sdk-server-0.1.1.jar jdom2-2.0.5.jar jsr305-3.0.1.ja
+ r bcprov-jdk16-1.46.jar slf4j-api-1.7.21.jar netty-buffer-4.0.36.Fina
+ l.jar jmdns-3.5.1.jar annotations-2.0.1.jar jool-0.9.10.jar sdk-core-
+ 0.1.1.jar jcommander-1.48.jar javassist-3.19.0-GA.jar netty-common-4.
+ 0.36.Final.jar slf4j-simple-1.7.21.jar stack-server-0.1.1.jar bsh-2.0
+ b4.jar sdk-client-0.1.1.jar protonpack-1.8.jar netty-handler-4.0.36.F
+ inal.jar testng-6.9.10.jar reflections-0.9.10.jar
+Main-Class: org.fortiss.uaserver.device.DeviceUaServer
+

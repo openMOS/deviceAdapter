@@ -1,0 +1,74 @@
+This is LuaTeX, Version 1.07.0 (MiKTeX 2.9.6840 64-bit)  (format=lualatex 2018.10.4)  2 JAN 2019 11:36
+ restricted system commands enabled.
+**introduction.tex
+(./introduction.tex
+LaTeX2e <2018-04-01> patch level 5
+Lua module: luaotfload-main 2018/09/24 2.90001 OpenType layout system.
+Lua module: lualibs 2018-09-21 2.6 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2018-09-21 2.6 ConTeXt Lua libraries -- extended co
+llection.
+luaotfload | conf : Root cache directory is C:/Users/dorofeev/AppData/Local/MiKT
+eX/2.9/luatex-cache/generic/names.
+luaotfload | init : Loading fontloader “fontloader-2018-09-24.lua” from kpse
+-resolved path “C:/Users/dorofeev/AppData/Local/Programs/MiKTeX 2.9/tex/luatex
+/luaotfload/fontloader-2018-09-24.lua”.
+Lua-only attribute luaotfload@state = 1
+Lua-only attribute luaotfload@noligature = 2
+Lua-only attribute luaotfload@syllabe = 3
+luaotfload | init : Context OpenType loader version “3.104”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 4
+luaotfload | conf : Root cache directory is C:/Users/dorofeev/AppData/Local/MiKT
+eX/2.9/luatex-cache/generic/names.
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
+.
+luaotfload | main : initialization completed in 0.832 seconds
+! Undefined control sequence.
+l.1 \section
+          {Introduction}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \section{I
+            ntroduction}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)
+! Emergency stop.
+<*> introduction.tex
+                 
+*** (job aborted, no legal \end found)
+
+
+
+Here is how much of LuaTeX's memory you used:
+ 8 strings out of 494407
+ 100000,89155 words of node,token memory allocated 395 words of node memory still in use:
+   1 hlist, 1 local_par, 1 dir, 2 glue, 3 kern, 13 glyph, 3 attribute, 35 glue_s
+pec, 3 attribute_list, 1 temp nodes
+   avail lists: 2:5,3:1,4:1
+ 4307 multiletter control sequences out of 65536+200000
+ 14 fonts using 591559 bytes
+ 5i,0n,4p,40b,16s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
